@@ -1,0 +1,112 @@
+board:
+  buy_url_cn: https://estore.st.com/en/nucleo-l452re-cpn.html
+  buy_url_global: https://estore.st.com/en/nucleo-l452re-cpn.html
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: The STM32 Nucleo-64 board provides an affordable and flexible way
+    for users to try out new concepts and build prototypes by choosing from the various
+    combinations of performance and power consumption features, provided by the STM32
+    microcontroller. For the compatible boards, the external SMPS significantly reduces
+    power consumption in Run mode.
+  description_zh: STM32 Nucleo-64板为用户提供了一种经济、灵活的方式，通过从STM32微控制器提供的性能和功耗特性的各种组合中进行选择，来尝试新概念和构建原型。对于兼容板，外部开关电源显著降低了运行模式下的功耗。
+  emulator_machine: ''
+  large_image: documents/images/board_large.png
+  name: STM32L452-ST-NUCLEO
+  price_cn: 91.31 CNY
+  price_global: 14.14 USD
+  sale_contact_cn: https://www.st.com/
+  sale_contact_global: https://www.st.com/
+  small_image: documents/images/board_small.png
+  vendor: ST
+  version: 1.0.0
+chip:
+  chip_name: STM32L452RE
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32L4
+  source_freq: '8000000'
+  sub_series_name: STM32L452
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/UM-getting-started-with-stm32-nucleo-board.pdf
+  title: UM-getting-started-with-stm32-nucleo-board
+- category: manual
+  file: documents/UM-stm32-nucleo32-boards-mb1180-stmicroelectronics.pdf
+  title: UM-stm32-nucleo32-boards-mb1180-stmicroelectronics
+example_projects: []
+features:
+- On-board ST-LINK/V2-1
+- USB VBUS, ext. VIN, ext. 5V, ext +3.3V
+- 'STMicroelectronics Morpho connector : (2 x 38) '
+- 'STMicroelectronics Arduino connector : 10 + (2 x 8) + 6 '
+- 'Push-buttons: User and Reset '
+- 'LEDs: COM, Power, User LEDs'
+features_zh:
+- 板载ST-LINK/V2-1
+- USB VBUS，外部VIN，外部5V，外部+3.3V
+- STMicroelectronics Morpho连接器：（2 x 38）
+- STMicroelectronics Arduino连接器：10+（2 x 8）+6
+- 按钮：用户和重置
+- 指示灯：COM、电源、用户指示灯
+pkg_type: Board_Support_Packages
+pkg_vendor: RT-Thread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - README_zh.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ST stm32l452-st-nucleo bsp
+  project_name: stm32l452-st-nucleo
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
